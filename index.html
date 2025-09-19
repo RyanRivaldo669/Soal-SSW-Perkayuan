@@ -686,7 +686,7 @@
     function showResult() {
       let percent = Math.round((score / questions.length) * 100);
       let resultMsg = `<h2>Hasil: ${score} / ${questions.length} soal benar (${percent}%)</h2>`;
-      resultMsg += percent >= 80
+      resultMsg += percent >= 65
         ? `<h3 style="color:green">✅ Lulus! Selamat 🎉</h3>`
         : `<h3 style="color:red">❌ Tidak Lulus. Semangat belajar lagi!</h3>`;
       resultMsg += `<button onclick="restartQuiz()">🔄 Ulangi Quiz</button>`;
@@ -720,5 +720,6 @@
 
 
 </html>
+
 
 
