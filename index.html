@@ -198,6 +198,8 @@
   <!-- Audio Lokal -->
 <audio id="correctSound" src="correct.mp3"></audio>
 <audio id="wrongSound" src="wrong.mp3"></audio>
+<audio id="lulusSound" src="lulus.mp3"></audio>
+<audio id="gagalSound" src="gagal.mp3"></audio>
 
   <script>
     const questions = [
@@ -684,15 +686,25 @@
     }
 
     function showResult() {
-      let percent = Math.round((score / questions.length) * 100);
-      let resultMsg = `<h2>Hasil: ${score} / ${questions.length} soal benar (${percent}%)</h2>`;
-      resultMsg += percent >= 65
-        ? `<h3 style="color:green">✅ Lulus! Selamat 🎉</h3>`
-        : `<h3 style="color:red">❌ Tidak Lulus. Semangat belajar lagi!</h3>`;
-      resultMsg += `<button onclick="restartQuiz()">🔄 Ulangi Quiz</button>`;
-      document.getElementById("quiz").innerHTML = resultMsg;
-      progressEl.style.width = "100%";
-    }
+  const lulusSound = document.getElementById("lulusSound");
+  const gagalSound = document.getElementById("gagalSound");
+
+  let percent = Math.round((score / questions.length) * 100);
+  let resultMsg = `<h2>Hasil: ${score} / ${questions.length} soal benar (${percent}%)</h2>`;
+
+  if (percent >= 65) {
+    resultMsg += `<h3 style="color:green">✅ Lulus! Selamat 🎉</h3>`;
+    lulusSound.play(); // Mainkan suara lulus
+  } else {
+    resultMsg += `<h3 style="color:red">❌ Tidak Lulus. Semangat belajar lagi!</h3>`;
+    gagalSound.play(); // Mainkan suara gagal
+  }
+
+  resultMsg += `<button onclick="restartQuiz()">🔄 Ulangi Quiz</button>`;
+  document.getElementById("quiz").innerHTML = resultMsg;
+  progressEl.style.width = "100%";
+}
+
 
     function restartQuiz() { location.reload(); }
 
@@ -720,6 +732,7 @@
 
 
 </html>
+
 
 
 
