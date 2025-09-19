@@ -339,7 +339,7 @@
       {
         q: "丸太（まるた）から製材品（せいざいひん）を挽（ひ）くことを挽皮（はくひ）と言（い）います。",
         correct: false,
-        exp: "Arti: Proses memotong kayu gelondongan menjadi produk kayu disebut hakubi. ➝ Salah, istilah '挽皮（はくひ）' bukan untuk proses ini."
+        exp: "Arti: Proses memotong kayu gelondongan menjadi produk kayu disebut hakubi. ➝ Salah, istilah '挽皮（はくひ）' adalah proses pengulitan kayu."
       },
       {
         q: "耳付き板(みみつきいた)から耳(みみ)を落(お)とすことを耳擦(みみす)りといいます。",
@@ -398,8 +398,8 @@
       },
       {
         q: "耳付板（みみつきいた）の耳（みみ）はバーガーで切（き）り落（お）とされます。",
-        correct: true,
-        exp: "Arti: Bagian pinggir papan berkulit (mimitsuki-ita) dipotong dengan burger (mesin pemotong samping). ➝ Benar."
+        correct: false,
+        exp: "Arti: Bagian pinggir papan berkulit (mimitsuki-ita) dipotong dengan barker (mesin pemotong samping). ➝ Salah (Barker adalah mesin untuk pengulitan kayu maruta)."
       },
       {
         q: "丸太（まるた）の傷（きず）や腐（くさ）れを確認（かくにん）して、それを避（さ）けた木取（きど）りをします。",
@@ -417,9 +417,9 @@
         exp: "Arti: Jika dari log 0,4㎡ diperoleh produk gergajian 0,2㎡, maka yield (hasil) adalah 50%. ➝ Benar."
       },
       {
-        q: "乾燥（かんそう）は製材品（せいざいひん）を磨（みが）く目（め）に行（おこな）います。",
+        q: "乾燥（かんそう）は製材品（せいざいひん）を磨（みがく) ために 行(おこな）います。",
         correct: false,
-        exp: "Arti: Pengeringan dilakukan untuk menghaluskan serat kayu pada produk gergajian. ➝ Salah (pengeringan dilakukan untuk mengurangi kadar air, bukan menghaluskan)."
+        exp: "Arti: Pengeringan dilakukan untuk menghaluskan serat kayu pada produk gergajian. ➝ Salah (pengeringan dilakukan untuk mengurangi kadar air, bukan menghaluskan (しあげ))."
       },
       {
         q: "人工乾燥（じんこうかんそう）は大容量（だいようりょう）の熱（ねつ）を使（つか）って行（おこな）います。",
@@ -442,7 +442,7 @@
         exp: "Arti: Produk tetap dikirim meskipun ukurannya berbeda dari standar. ➝ Salah (ukuran harus sesuai standar)."
       },
       {
-        q: "品質検査（ひんしつけんさ）はその規格（きかく）に沿（そ）って行（おこな）います。",
+        q: "品質検査（ひんしつけんさ）はその規格（きかく）に沿（そ)って行（おこな）います。",
         correct: true,
         exp: "Arti: Pemeriksaan kualitas dilakukan sesuai dengan standar yang berlaku. ➝ Benar."
       },
@@ -467,7 +467,7 @@
         exp: "Arti: Pada tahap penyortiran produk, cacat tidak diperiksa. ➝ Salah (penyortiran harus termasuk memeriksa produk cacat)."
       },
       {
-        q: "製材品（せいざいひん）の割（わ）れは欠点（けってん）の一（ひと）つです。",
+        q: "製材品（せいざいひん）の割（わ)れは欠点（けってん）の一（ひと）つです。",
         correct: true,
         exp: "Arti: Retakan pada kayu gergajian adalah salah satu cacat. ➝ Benar."
       },
@@ -489,7 +489,7 @@
       {
         q: "端材(はざい)は決(き)まった場所(ばしょ)に片付(かたづ)けます。",
         correct: true,
-        exp: "Arti: Sisa kayu ditempatkan di lokasi yang telah ditentukan. ➝ Benar."
+        exp: "Arti: Sisa kayu dirapikan di lokasi yang telah ditentukan. ➝ Benar."
       },
       {
         q: "玉切(たまぎ)りでは鋸屑(のこくず)や端材(はざい)は出(で)ません。",
@@ -502,7 +502,7 @@
         exp: "Arti: Di industri pengolahan kayu, kecelakaan kerja cukup sering terjadi. ➝ Benar."
       },
       {
-        q: "ヘルメット(へるめっと)を付(つ)けるとき顎紐(あごひも)を締(し)めます。",
+        q: "ヘルメットを付(つ)けるとき顎紐(あごひも)を締(し)めます。",
         correct: true,
         exp: "Arti: Saat memakai helm, kencangkan tali dagu. ➝ Benar."
       },
@@ -517,7 +517,7 @@
         exp: "Arti: Di dalam pabrik, pakai helm sesuai kebutuhan. ➝ Benar."
       },
       {
-        q: "サンダル(さんだる)は履(は)かないで作業(さぎょう)をします。",
+        q: "サンダルは履(は)かないで作業(さぎょう)をします。",
         correct: false,
         exp: "Arti: Jangan memakai sandal saat bekerja. ➝ Salah, memakai sepatu."
       },
@@ -720,4 +720,5 @@
 
 
 </html>
+
 
