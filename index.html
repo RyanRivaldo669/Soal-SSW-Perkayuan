@@ -767,7 +767,7 @@
   let percent = Math.round((score / questions.length) * 100);
   let resultMsg = `<h2>Hasil: ${score} / ${questions.length} soal benar (${percent}%)</h2>`;
 
-  if (percent >= 65) {
+  if (percent >= 90) {
     resultMsg += `<h3 style="color:green">✅ Lulus! Selamat 🎉</h3>`;
     lulusSound.play(); // Mainkan suara lulus
   } else {
@@ -807,6 +807,7 @@
 
 
 </html>
+
 
 
 
